@@ -1,0 +1,96 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f4f0;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(90deg, #6d0019, #a4002d);
+  color: #ffd700;
+  text-align: center;
+  padding: 25px;
+}
+
+.headerTitle {
+  margin: 0;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.headerSubtitle {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #ffe8a1;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 40px;
+}
+
+/* CARD */
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border: 1px solid #e0c97a;
+  margin-bottom: 30px;
+}
+
+.cardTitle {
+  color: #6d0019;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 5px;
+}
+
+.hint {
+  font-size: 12px;
+  color: #666;
+  margin-top: 6px;
+}
+
+/* TABLE */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.table th {
+  background-color: #f2e3b6;
+}
+
+.verifyBtn {
+  background-color: #6d0019;
+  color: #ffd700;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* JSON DISPLAY */
+.jsonBox {
+  background-color: #f4f4f4;
+  padding: 15px;
+  font-size: 13px;
+  overflow-x: auto;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #6d0019;
+  color: #ffd700;
+  text-align: center;
+  padding: 12px;
+  font-size: 13px;
+}
