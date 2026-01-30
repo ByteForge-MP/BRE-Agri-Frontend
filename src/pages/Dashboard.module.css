@@ -1,16 +1,5 @@
-.page {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #f8f4f0;
-}
-
-/* HEADER */
-.header {
-  background: linear-gradient(90deg, #6d0019, #a4002d);
-  color: #ffd700;
-  text-align: center;
-  padding: 25px;
+html {
+  overflow-y: scroll;
 }
 
 .headerTitle {
@@ -19,38 +8,39 @@
   font-weight: bold;
 }
 
-.headerSubtitle {
+.headerSubTitle {
   margin-top: 6px;
   font-size: 14px;
   color: #ffe8a1;
+  letter-spacing: 0.5px;
 }
 
-/* MAIN */
-.main {
-  flex: 1;
-  padding: 40px;
+
+/* PAGE */
+.page {
+  min-height: 100vh;
+  background: #f8f4f0;
+  padding: 30px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  background: linear-gradient(90deg, #6d0019, #a4002d);
+  color: #ffd700;
+  padding: 20px;
+  border-radius: 6px;
+  margin-bottom: 25px;
 }
 
 /* CARD */
 .card {
-  background-color: #ffffff;
-  padding: 25px;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
   border: 1px solid #e0c97a;
-  margin-bottom: 30px;
-}
-
-.cardTitle {
-  color: #6d0019;
-  font-size: 18px;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #d4af37;
-  padding-bottom: 5px;
-}
-
-.hint {
-  font-size: 12px;
-  color: #666;
-  margin-top: 6px;
+  margin-bottom: 25px;
 }
 
 /* TABLE */
@@ -61,36 +51,83 @@
 
 .table th,
 .table td {
-  border: 1px solid #ccc;
+  border: 1px solid #d4af37;
   padding: 8px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .table th {
-  background-color: #f2e3b6;
+  background: #f3e7bf;
+  font-weight: bold;
 }
 
+/* BUTTON */
 .verifyBtn {
-  background-color: #6d0019;
+  background: #6d0019;
   color: #ffd700;
   border: none;
-  padding: 6px 12px;
+  padding: 6px 14px;
+  border-radius: 4px;
   cursor: pointer;
+  min-width: 110px;
 }
 
-/* JSON DISPLAY */
+.verifyBtn:disabled {
+  background: gray;
+}
+
+/* RESULT */
+.resultContainer {
+  min-height: 350px;
+  transition: all 0.3s ease;
+}
+
+.resultCard {
+  background: #fff;
+  border: 1px solid #d4af37;
+  padding: 20px;
+  border-radius: 6px;
+  animation: fadeIn 0.4s ease;
+}
+
+/* JSON */
 .jsonBox {
-  background-color: #f4f4f4;
-  padding: 15px;
-  font-size: 13px;
-  overflow-x: auto;
+  background: #1e1e1e;
+  color: #eee;
+  padding: 12px;
+  font-size: 12px;
+  max-height: 250px;
+  overflow-y: auto;
 }
 
-/* FOOTER */
-.footer {
-  background-color: #6d0019;
-  color: #ffd700;
+/* CENTERED DOWNLOAD BUTTON */
+.downloadWrapper {
   text-align: center;
-  padding: 12px;
-  font-size: 13px;
+  margin-top: 25px;
+}
+
+.downloadBtn {
+  background: linear-gradient(90deg, #6d0019, #a4002d);
+  color: #ffd700;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.downloadBtn:hover {
+  background: linear-gradient(90deg, #850020, #c0003a);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
